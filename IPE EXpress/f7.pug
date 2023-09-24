@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title F7
+  body 
+    form(action="/student", method="post")
+      input(type="text", name="uname",placeholder="Name")
+      input(type="email", name="uemail",placeholder="Email")
+      
+      p 
+        Course
+        input(type="radio", name="ucourse", value="CE") 
+        | CE 
+        input(type="radio", name="ucourse", value="IT") 
+        | IT
+        input(type="radio", name="ucourse", value="CSE") 
+        | CSE
+    
+      input(type="submit", value="Submit")

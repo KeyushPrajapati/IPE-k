@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F3</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            gap:10px;
+        }
+        input,textarea{
+            padding: 10px;
+            border: 1px solid black;
+            background: white;
+            /* outline: 1px solid rgb(75, 75, 255); */
+        }
+        [type='submit']{
+            background-color: aquamarine;
+        }
+        [type='submit']:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" method="post">
+        <input type="text" name="name" id="name" placeholder="Name">
+        <p>DOB <input type="date" name="dob"></p>
+        <input type="number" name="cno" id="cno" placeholder="Number">
+        <input type="email" name="mail" id="mail" placeholder="Email">
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Text Message"></textarea>
+        <p>Gender
+            <input type="radio" name="gender" value="male" id="gender">Male
+            <input type="radio" name="gender" value="Female" id="gender">Female
+        </p>
+        <input type="submit">
+    </form>
+</body>
+</html>
